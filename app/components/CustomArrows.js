@@ -8,7 +8,7 @@ export const PrevArrow = ({ onClick }) => {
     <div
       onClick={onClick}
       className="absolute top-1/2 -translate-y-1/2 
-                 left-2 sm:-left-6 md:-left-5 lg:-left-6 xl:-left-20 
+                 left-2 sm:-left-6 md:-left-5 lg:-left-8 xl:-left-20 
                  w-10 h-10 sm:w-12 sm:h-12 
                  bg-white flex justify-center items-center 
                  rounded-full shadow-md hover:bg-gray-100 
@@ -25,7 +25,7 @@ export const NextArrow = ({ onClick }) => {
     <div
       onClick={onClick}
       className="absolute top-1/2 -translate-y-1/2 
-                 right-2 sm:-right-6 md:-right-5 lg:-right-5 
+                 right-2 sm:-right-6 md:-right-5 lg:-right-8 xl:-right-12 
                  w-10 h-10 sm:w-12 sm:h-12 
                  bg-white flex justify-center items-center 
                  rounded-full shadow-md hover:bg-gray-100 

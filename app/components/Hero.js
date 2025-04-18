@@ -14,10 +14,10 @@ const Hero = () => {
         <div className="container mx-auto px-6 h-full">
             <div className='flex justify-between items-center flex-col h-full lg:flex-row gap-16 lg:gap-2'>
                 <div className='max-w-[584px] w-full order-2 lg:order-1'>
-                    <h3 className='font-rancho text-[40px] sm:text-[60px] md:text-[100px] text-[#ED6923] pb-2 capitalize'>hungry?</h3>
-                    <h1 className='!font-poppins !font-bold !text-3xl sm:!text-5xl md:!text-7xl'><span>Let Us</span> <span className='text-[#ED6923]'>Bring The Feast to You</span></h1>
-                    <p className='!font-poppins !text-base sm:text-[18px] text-[#333333] py-6'>Explore hundreds of delicious options from top restaurants and  Enjoy fast, reliable delivery right to you.</p>
-                    <form>
+                    <h3 className='font-rancho text-[40px] sm:text-[60px] md:text-[100px] text-[#ED6923] pb-2 capitalize md:leading-[120%]'>hungry?</h3>
+                    <h1 className='!font-poppins !font-bold !text-3xl sm:!text-5xl md:!text-7xl md:leading-[130%]'><span>Let Us</span> <span className='text-[#ED6923]'>Bring The Feast to You</span></h1>
+                    <p className='!font-poppins !text-base sm:text-[18px] text-[#333333] pt-6 pb-8 md:leading-[150%]'>Explore hundreds of delicious options from top restaurants and  Enjoy fast, reliable delivery right to you.</p>
+                    <form className=''>
                         <div className='flex items-center justify-between'>
                             <div className='flex items-center justify-between w-full sm:py-5 py-[9px] ps-[9px] border border-[#ED6923] rounded-s-xl sm:px-[15px]'>
                                 <input type="text" name="" id="" placeholder='Enter your location'  className='sm:!text-sm !text-xs font-poppins text-[#6C757D] outline-0'/>
@@ -26,7 +26,7 @@ const Hero = () => {
                                     <span className='hidden md:block text-sm !font-poppins text-[#ED6923]'>Locate me</span>
                                 </div>
                             </div>
-                            <div className='md:max-w-[159px] w-[110px]'>
+                            <div className=''>
                                 <input type="submit" value="Find Food" className='sm:py-[17px] md:px-8 sm:px-4 p-2 bg-[#ED6923] rounded-e-xl !text-white sm:!text-xl !text-sm font-semibold !font-poppins'/>
                             </div>
                         </div>

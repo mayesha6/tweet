@@ -12,7 +12,7 @@ const Categories = () => {
             <div>
                 <Title subtitle="category" titlePart1="popular" titlePart2="category"/>
                 <div className='pt-[65px]'>
-                    <TweetSlider/>
+                    <TweetSlider slidesToShow='7'/>
                 </div>
 
                 

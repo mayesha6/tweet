@@ -4,13 +4,18 @@
 :root {
   --font-poppins: 'Poppins', sans-serif;
   --font-rancho: 'Rancho', cursive;
+  --font-lobster: "Lobster Two", sans-serif;;
 }
 
 *{
   margin-bottom:0px!important;
 }
 body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-poppins)!important;
+}
+.container{
+  max-width: 1244px;
+  width: 100%;
 }
 .font-rancho {
   font-family: var(--font-rancho);
@@ -19,9 +24,50 @@ body {
   font-family: "Lobster Two", sans-serif;
 }
 
-@media (max-width: 1280px) {
-  .slick-slider.slider-container.h-\[146px\].slick-initialized {
+/* card css  */
+:where(.css-dev-only-do-not-override-1261szd).ant-card .ant-card-body {
+  padding: 15px;
+  border-radius: 0 0 15px 15px;
+}
+:where(.css-dev-only-do-not-override-1261szd).ant-card .ant-card-cover >* {
+  border-radius: 15px 15px 0 0;
+}
+:where(.css-dev-only-do-not-override-1261szd).ant-card-bordered {
+  border: 0;
+}
+
+/* slider css  */
+.slick-list {
+  height: 330px;
+}
+
+/* update form css  */
+.ant-row.ant-form-item-row.css-dev-only-do-not-override-1261szd {
+  padding: 24px 20px 19px;
+  border-radius: 13px;
+  border: 2px dashed #A1A1A1;
+}
+input {
+  border: 0px!important;
+  padding: 0px !important;
+}
+
+/* responsive css  */
+@media (max-width: 1380px) {
+  .slick-slider.slider-container {
     max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1120px) {
+  .slick-slider.slider-container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .slick-slider.slider-container {
+    max-width: 550px;
     margin: 0 auto;
   }
 }

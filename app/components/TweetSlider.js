@@ -1,15 +1,15 @@
 'use client'
 import React from 'react'
 import categories from '@/app/Data/categoriesData'
-import Category from './category'
+import Category from '@/app/components/Category'
 import Slider from 'react-slick'
 import { NextArrow, PrevArrow } from './CustomArrows'
 
-const TweetSlider = () => {
+const TweetSlider = ({slidesToShow}) => {
     const settings = {
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: Number(slidesToShow),
         slidesToScroll: 1,
         prevArrow: <PrevArrow/>,
         nextArrow: <NextArrow/>,
@@ -45,9 +45,8 @@ const TweetSlider = () => {
                     {categories.map((category)=>{
                         return(
                             <div key={category.id}>
-                                <div  className="flex xl:justify-between justify-center">
-                                    
-                                <Category bgColor={category.bgColor} image={category.image} title={category.title}  />
+                                <div className="flex xl:justify-between justify-center">
+                                  <Category bgColor={category.bgColor} image={category.image} title={category.title}  />
                                 </div>
                             </div>
                         )
