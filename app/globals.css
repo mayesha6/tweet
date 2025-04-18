@@ -41,15 +41,54 @@ body {
   height: 330px;
 }
 
-/* update form css  */
-.ant-row.ant-form-item-row.css-dev-only-do-not-override-1261szd {
-  padding: 24px 20px 19px;
-  border-radius: 13px;
-  border: 2px dashed #A1A1A1;
+.clip-diagonal{
+  clip-path: polygon(-150% 100%, 100% 0, 100% 100%);
 }
-input {
-  border: 0px!important;
-  padding: 0px !important;
+
+/* testimonial */
+.testimonial .slick-list {
+  height: 100%;
+  padding-bottom: 22px;
+}
+.testimonial .slick-dots li.slick-active button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  content: '';
+  text-align: center;
+  opacity: 1;
+  background-color: #ED6923;
+  border:1px solid #ED6923;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.testimonial .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  content: '';
+  text-align: center;
+  opacity: 1;
+  background-color: #FFFFFF;
+  border:1px solid #ED6923;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.testimonial .slick-prev,
+.testimonial .slick-next {
+  display: none !important;
 }
 
 /* responsive css  */
