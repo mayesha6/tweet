@@ -3,7 +3,7 @@ import { Card } from 'antd'
 import Image from 'next/image'
 import React from 'react'
 import RestaurantIcon from '@/public/img/restaurant-icon.png'
-import { Clock3, Bike, BadgePercent  } from 'lucide-react';
+import { Clock3, Bike, BadgePercent, Plus  } from 'lucide-react';
 import LikeButton from './LikeButton'
 
 const Food = ({id,title, shopName, deliveryDuration, deliveryCharge, regularPrice, discount, rating, image}) => {
@@ -15,7 +15,7 @@ const Food = ({id,title, shopName, deliveryDuration, deliveryCharge, regularPric
             style={{ width: 282 }}
             cover={<Image src={image} alt={`${title} image`} className='h-[175px]'/>}
         >
-            <div className='flex flex-col h-[107px]'>
+            <div className='flex flex-col h-[107px] relative'>
                 <div className='flex items-center justify-between gap-4'>
                     <h2 className='!font-poppins !font-medium text-lg leading-[130%] text-[#262626]'>{title}</h2>
                     <div>
@@ -41,6 +41,10 @@ const Food = ({id,title, shopName, deliveryDuration, deliveryCharge, regularPric
                         </div>
                     </div>
                 </div>
+                
+                <div className='absolute bottom-0 right-0 w-9 h-9 text-white flex justify-center items-center rounded-full bg-[#ED6923] border-[1px] border-[#ED6923] duration-300 hover:bg-white hover:text-[#ED6923]'>
+                                <Plus/>
+                            </div>
             </div>
 
             <div className='absolute top-[28px] left-0 bg-[#ED6923] rounded-e-[50px] flex w-[83px] items-center gap-1'>
