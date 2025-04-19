@@ -18,7 +18,7 @@ const TestimonialSlider = () => {
   };
   const stars = [1, 2, 3, 4, 5];
   return (
-    <div className="!max-w-[485px]">
+    <div className="!max-w-[485px] !px-6 md:!px-0">
       <Slider {...settings}>
         <div className="!max-w-[485px] border-[1px] border-[#FFCABB] rounded-lg p-[25px]">
           <div>
